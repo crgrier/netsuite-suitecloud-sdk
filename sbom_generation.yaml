@@ -11,6 +11,17 @@ shell: bash
 
 steps:
   - type: Command
+    name: "Install Node.js and npm"
+    command: |
+      # Install Node.js version 16.14.2
+      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+      export NVM_DIR="$HOME/.nvm"
+      [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+      nvm install 16.14.2
+      nvm use 16.14.2
+      # Install npm version 10.2.4
+      npm install -g npm@10.2.4
+  - type: Command
     name: "Install dependencies & cyclonedx-node-npm package"
     command: |
       npm install && npm install --save-dev @cyclonedx/cyclonedx-npm
