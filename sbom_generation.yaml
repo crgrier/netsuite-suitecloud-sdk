@@ -13,12 +13,12 @@ steps:
   - type: Command
     name: "Install Node.js and npm"
     command: |
-      # Install Node.js version 16.14.2
+      # Install Node.js version 20.9.0
       curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
       export NVM_DIR="$HOME/.nvm"
       [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-      nvm install 16.14.2
-      nvm use 16.14.2
+      nvm install 20.9.0
+      nvm use 20.9.0
       # Install npm version 10.2.4
       npm install -g npm@10.2.4
   - type: Command
