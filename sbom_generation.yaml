@@ -11,16 +11,10 @@ shell: bash
 
 steps:
   - type: Command
-    name: "Install Node.js and npm"
+    name: "Install npm"
     command: |
-      # Install Node.js version 20.9.0
-      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-      export NVM_DIR="$HOME/.nvm"
-      [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-      nvm install 20.9.0
-      nvm use 20.9.0
-      # Install npm version 10.2.4
-      npm install -g npm@10.2.4
+      # Install npm version 8.5.0
+      npm install -g npm@8.5.0
   - type: Command
     name: "Install dependencies & cyclonedx-node-npm package"
     command: |
