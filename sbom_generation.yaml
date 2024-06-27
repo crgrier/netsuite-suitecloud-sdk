@@ -18,7 +18,7 @@ steps:
   - type: Command
     name: "Install dependencies & cyclonedx-node-npm package"
     command: |
-      npm install --acceptsuitecloudsdklicense && npm install --save-dev @cyclonedx/cyclonedx-npm
+      npm install --ignore-scripts && npm install --save-dev @cyclonedx/cyclonedx-npm
   - type: Command
     name: "Run cyclonedx-node-npm package"
     command: |
