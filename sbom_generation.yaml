@@ -22,7 +22,7 @@ steps:
   - type: Command
     name: "Install cyclonedx-node-npm package"
     command: |
-      npm install --save-dev @cyclonedx/cyclonedx-npm
+      npm install --ignore-scripts -g --save-dev @cyclonedx/cyclonedx-npm
   - type: Command
     name: "Run cyclonedx-node-npm package"
     command: |
