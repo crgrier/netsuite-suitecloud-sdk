@@ -16,9 +16,13 @@ steps:
       # Install npm version 8.5.0
       npm install -g npm@8.5.0
   - type: Command
-    name: "Install dependencies & cyclonedx-node-npm package"
+    name: "Install netsuite packages"
     command: |
-      npm install --acceptsuitecloudsdklicense && npm install --save-dev @cyclonedx/cyclonedx-npm
+      npm install --ignore-scripts
+  - type: Command
+    name: "Install cyclonedx-node-npm package"
+    command: |
+      npm install --save-dev @cyclonedx/cyclonedx-npm
   - type: Command
     name: "Run cyclonedx-node-npm package"
     command: |
