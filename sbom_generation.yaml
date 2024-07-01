@@ -13,8 +13,8 @@ steps:
   - type: Command
     name: "Install npm"
     command: |
-      # Install npm version 8.5.0
-      npm install -g npm@8.5.0
+      # Install npm version 10.8.1
+      npm install -g npm@10.8.1
   - type: Command
     name: "Install netsuite packages"
     command: |
