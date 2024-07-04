@@ -51,7 +51,7 @@ steps:
     command: |
       # For more details, visit https://github.com/CycloneDX/cyclonedx-cli/blob/main/README.md
       chmod +x cyclonedx-linux-x64
-      ./cyclonedx-linux-x64 merge --input-files artifactSBOM1.json, packages/vscode-extension/artifactSBOM2.json --output-file artifactSBOM.json
+      ./cyclonedx-linux-x64 merge --input-files artifactSBOM1.json packages/vscode-extension/artifactSBOM2.json --output-file artifactSBOM.json
 outputArtifacts:
   - name: artifactSBOM
     type: BINARY
